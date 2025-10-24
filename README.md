@@ -2,9 +2,9 @@
  _  _  ____            _     _ _                       _               
 | || ||___ \ _   _ __ | |__ (_) | ___  ___  ___  _ __ | |__   ___ _ __ 
 | || |_ __) (_) | '_ \| '_ \| | |/ _ \/ __|/ _ \| '_ \| '_ \ / _ \ '__|
-|__   _/ __/ _  | |_) | | | | | | (_) \__ \ (_) | |_) | | | |  __/ |   
-   |_||_____(_) | .__/|_| |_|_|_|\___/|___/\___/| .__/|_| |_|\___|_|   
-                |_|                             |_|                                                       
+|__   _/ __/ _  | |_) | | | | | | (_) \__ \ (_) | |_) | | | |  __/ |
+   |_||_____(_) | .__/|_| |_|_|_|\___/|___/\___/| .__/|_| |_|\___|_|
+                |_|                             |_|
 ```
 
 ### **Overview**
@@ -13,15 +13,21 @@ An introduction to concurrency through the classic Dining Philosophers problem. 
 
 ---
 
+### **Key Learnings**
+- The conecept of thread and process working together to achieve a goal
+- Understand the concept and benefit of concurrency
+- The challenges of using concurrency
+- Managed concurrency to prevent Deadlock and Data Race
+
+---
+
 ### **About**
 
 👉 [**Project requirement**](https://github.com/Mecha-Coder/42-philosopher/blob/main/demo/en.subject.pdf)
 
-The Dining Philosophers problem is a foundational computer science exercise in concurrency, which explores how multiple tasks (threads or processes) can safely share limited resources.
+The Dining Philosophers problem is a foundational computer science exercise to concurrency.
 
-Concurrency is like having several workers performing tasks at the same time with a shared resource.
-
-Trouble begins when multiple workers tries to modify the same resource simultaneously. This led to data race, where the results is unpredictable.
+Concurrency is like having several workers (threads or processes) performing tasks at the same time with a shared resource. Problem arise when multiple workers tries to modify the same resource simultaneously. This causes data race, which leds to unpredictable.
 
 Since this project is written in C, we use below synchronization primitives to solve this problem:
 
@@ -36,7 +42,7 @@ Another thing to watch for is deadlock, where someone forgets to return the key.
 
 ![figure2](https://github.com/Mecha-Coder/42-philosopher/blob/main/demo/figure2.png)
 
-The goal of the simulation is to ensure fair resource time (forks or chopsticks) to every philosopher, so all have the chance to “eat” without starving or blocking others.
+The goal of the simulation is to ensure fair resource time (forks or chopsticks) to every philosopher (threads or processes), so all have the chance to “eat” without starving or blocking others.
 
 This project is implemented in two parts:
 - Threads version — each philosopher is a thread.
@@ -44,11 +50,9 @@ This project is implemented in two parts:
 
 ---
 
-### **Learnings**
-- The conecept of thread and process working together to achieve a goal
-- Understand the concept and benefit of concurrency
-- The challenges of using concurrency
-- Managed concurrency to prevent Deadlock and Data Race
+### **Demo**
+
+![demo](https://github.com/Mecha-Coder/42-philosopher/blob/main/demo/demo.gif)
 
 ---
 
@@ -86,9 +90,3 @@ make
 ---
 
 ### **Resource**
-
----
-
-### **Demo**
-
-![demo](https://github.com/Mecha-Coder/42-philosopher/blob/main/demo/demo.gif)
