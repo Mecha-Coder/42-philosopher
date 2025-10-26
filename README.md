@@ -27,7 +27,7 @@ An introduction to concurrency through the classic Dining Philosophers problem. 
 
 The Dining Philosophers problem is a foundational computer science exercise to concurrency.
 
-Concurrency is like having several workers (threads or processes) performing tasks at the same time with a shared resource. Problem arise when multiple workers tries to modify the same resource simultaneously. This causes data race, which leds to unpredictable.
+Concurrency is like having several workers (threads or processes) performing tasks at the same time with a shared resource. Problem arise when multiple workers tries to modify the same resource simultaneously. This causes data race, which leds to unpredictability.
 
 Since this project is written in C, we use below synchronization primitives to solve this problem:
 
